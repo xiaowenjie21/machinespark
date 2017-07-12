@@ -8,7 +8,7 @@ class Engine:
     '''Mysql engine'''
 
     def __init__(self):
-        self.engine = create_engine("mysql+pymysql://qiniu:mypwd@139.159.212.35:3306/qiniudata?charset=utf8",
+        self.engine = create_engine("mysql+pymysql://username:password@yourip:3306/qiniudata?charset=utf8",
                                encoding='utf8', echo = True)
         self.metadata = MetaData()
 
